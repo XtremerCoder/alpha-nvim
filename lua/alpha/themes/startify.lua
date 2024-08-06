@@ -33,7 +33,7 @@ local function button(sc, txt, keybind, keybind_opts)
         shortcut = "[" .. sc .. "] ",
         cursor = 1,
         -- width = 50,
-        align_shortcut = "left",
+        align_shortcut = "center",
         hl_shortcut = { { "Operator", 0, 1 }, { "Number", 1, #sc + 1 }, { "Operator", #sc + 1, #sc + 2 } },
         shrink_margin = false,
     }
@@ -163,7 +163,7 @@ local section = {
     top_buttons = {
         type = "group",
         val = {
-            button("e", "New file", "<cmd>ene <CR>"),
+            button("n", "New file", "<cmd>ene <CR>"),
         },
     },
     -- note about MRU: currently this is a function,
