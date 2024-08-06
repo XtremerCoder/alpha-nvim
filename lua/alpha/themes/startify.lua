@@ -29,7 +29,7 @@ local function button(sc, txt, keybind, keybind_opts)
     local sc_ = sc:gsub("%s", ""):gsub(leader, "<leader>")
 
     local opts = {
-        position = "left",
+        position = "center",
         shortcut = "[" .. sc .. "] ",
         cursor = 1,
         -- width = 50,
